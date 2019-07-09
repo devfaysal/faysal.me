@@ -3,7 +3,13 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {}
+    extend: {
+      colors: {
+        twitter: '#1da1f2',
+        github: '#4078c0',
+        facebook: '#4267b2',
+      }
+    }
   },
   variants: {},
   plugins: []
