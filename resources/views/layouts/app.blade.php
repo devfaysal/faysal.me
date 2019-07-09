@@ -61,7 +61,7 @@
         <main>
             @yield('content')
         </main>
-        <footer class="flex justify-between">
+        <footer class="flex justify-between pt-4">
             {{-- <a href="/privacy-policy" class="text-sm text-gray-500 no-underline hover:underline">Privacy Policy</a> --}}
             <span class="text-sm text-gray-500">© {{date('Y')}} Faysal Ahamed</span>
         </footer>
