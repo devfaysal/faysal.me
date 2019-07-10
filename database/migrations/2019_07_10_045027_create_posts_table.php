@@ -15,17 +15,15 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('author_id');
+            $table->string('author')->default('Faysal Ahamed');
             $table->string('title');
             $table->string('slug');
             $table->longText('content');
             $table->text('excerpt');
             $table->boolean('published')->default(false);
             $table->boolean('featured')->default(false);
-            $table->timestamp('published_at')->nullable();
+            $table->dateTime('published_at')->nullable();
             $table->timestamps();
-
-            $table->foreign('author_id')->references('id')->on('users');
         });
     }
 

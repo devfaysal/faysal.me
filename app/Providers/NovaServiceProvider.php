@@ -43,7 +43,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         Gate::define('viewNova', function ($user) {
             return in_array($user->email, [
-                //
+                'hello@faysal.me'
             ]);
         });
     }
@@ -67,7 +67,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function tools()
     {
-        return [];
+        return [
+            new \Infinety\Filemanager\FilemanagerTool(),
+        ];
     }
 
     /**

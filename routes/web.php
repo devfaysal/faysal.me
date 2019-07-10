@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use GrahamCampbell\Markdown\Facades\Markdown;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,13 @@ use App\Http\Controllers\AboutController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/about', [AboutController::class, 'index']);
+
+Route::get('/post', function(){
+    $post = App\Post::find(3);
+
+    //dd($post);
+
+    return view('post', [
+        'post' => $post
+    ]);
+});
