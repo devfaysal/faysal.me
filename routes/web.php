@@ -22,7 +22,7 @@ Route::get('/about', [AboutController::class, 'index']);
 Route::get('/post', function(){
     $post = App\Post::find(3);
 
-    //dd($post);
+    dd($post->tags[0]->name);
 
     return view('post', [
         'post' => $post

@@ -2,34 +2,27 @@
 
 namespace App\Nova;
 
-use Spatie\TagsField\Tags;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\Markdown;
-use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\BelongsTo;
-use Infinety\Filemanager\FilemanagerField;
+use Spatie\Tags\Tag as TagModel;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Post extends Resource
+class Tag extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\Post';
+    public static $model = TagModel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -37,7 +30,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'name',
     ];
 
     /**
@@ -49,34 +42,7 @@ class Post extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
-
-            Text::make('Author')
-                ->hideWhenCreating()
-                ->hideWhenUpdating(),
-
-            Text::make('Post Title', 'title'),
-
-            Text::make('Slug'),
-            
-            //Markdown::make('Post Content', 'content'),
-
-            //PostContent::make('content'),
-
-            // FilemanagerField::make('Image'),
-            
-            Markdown::make('Post Content', 'content'),
-            
-            Trix::make('Excerpt'),
-
-            Tags::make('Tags'),
-
-            Boolean::make('Published'),
-
-            Boolean::make('Featured'),
-
-            DateTime::make('Published at', 'published_at')
-            
+            Text::make('Name')->sortable(),
         ];
     }
 

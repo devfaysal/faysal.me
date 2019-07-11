@@ -14,7 +14,9 @@
         "infinety-es/nova-filemanager": "^2.2",
         "laravel/framework": "5.8.*",
         "laravel/nova": "~2.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "spatie/laravel-tags": "^2.4",
+        "spatie/nova-tags-field": "^2.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

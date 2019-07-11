@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fd638c076aee77589c44c4804ccbb41",
+    "content-hash": "d42ea2b94f8a56944031b18624af7cd8",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -2008,6 +2008,234 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "spatie/eloquent-sortable",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/eloquent-sortable.git",
+                "reference": "a46a91d05d4ac66b6a2b8db2eb5e134a43d42277"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/eloquent-sortable/zipball/a46a91d05d4ac66b6a2b8db2eb5e134a43d42277",
+                "reference": "a46a91d05d4ac66b6a2b8db2eb5e134a43d42277",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.8.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\EloquentSortable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be"
+                }
+            ],
+            "description": "Sortable behaviour for eloquent models",
+            "homepage": "https://github.com/spatie/eloquent-sortable",
+            "keywords": [
+                "behaviour",
+                "eloquent",
+                "laravel",
+                "model",
+                "sort",
+                "sortable"
+            ],
+            "time": "2019-04-01T07:05:06+00:00"
+        },
+        {
+            "name": "spatie/laravel-tags",
+            "version": "2.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-tags.git",
+                "reference": "b452ce85a285173028917cbc29dae2d63b184033"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-tags/zipball/b452ce85a285173028917cbc29dae2d63b184033",
+                "reference": "b452ce85a285173028917cbc29dae2d63b184033",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.8",
+                "php": "^7.2",
+                "spatie/eloquent-sortable": "^3.5",
+                "spatie/laravel-translatable": "^4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Tags\\TagsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Tags\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add tags and taggable behaviour to your Laravel app",
+            "homepage": "https://github.com/spatie/laravel-tags",
+            "keywords": [
+                "laravel-tags",
+                "spatie"
+            ],
+            "time": "2019-04-17T17:05:48+00:00"
+        },
+        {
+            "name": "spatie/laravel-translatable",
+            "version": "4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-translatable.git",
+                "reference": "c0c385367e353898ce635737707fa4abc6b15027"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/c0c385367e353898ce635737707fa4abc6b15027",
+                "reference": "c0c385367e353898ce635737707fa4abc6b15027",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.8.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "theMohamedSaid@gmail.com",
+                    "role": "Original idea"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/spatie/laravel-translatable",
+            "keywords": [
+                "eloquent",
+                "i8n",
+                "laravel-translatable",
+                "model",
+                "multilingual",
+                "spatie",
+                "translate"
+            ],
+            "time": "2019-06-05T07:47:10+00:00"
+        },
+        {
+            "name": "spatie/nova-tags-field",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/nova-tags-field.git",
+                "reference": "3b16d4bcab14d6b93b908424e856f898db5e575f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/nova-tags-field/zipball/3b16d4bcab14d6b93b908424e856f898db5e575f",
+                "reference": "3b16d4bcab14d6b93b908424e856f898db5e575f",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^2.0",
+                "php": ">=7.1.0",
+                "spatie/laravel-tags": "^2.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^3.8",
+                "phpunit/phpunit": "8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\TagsField\\TagsFieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TagsField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A tags field for Nova apps",
+            "homepage": "https://github.com/spatie/nova-tags-field",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-06-01T10:10:54+00:00"
         },
         {
             "name": "spatie/once",
