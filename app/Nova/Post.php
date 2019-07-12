@@ -12,8 +12,10 @@ use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Benjaminhirsch\NovaSlugField\Slug;
 use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Benjaminhirsch\NovaSlugField\TextWithSlug;
 
 class Post extends Resource
 {
@@ -55,19 +57,14 @@ class Post extends Resource
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 
-            Text::make('Post Title', 'title'),
+            TextWithSlug::make('Post Title', 'title')
+                ->slug('slug'),
 
-            Text::make('Slug'),
-            
-            //Markdown::make('Post Content', 'content'),
-
-            //PostContent::make('content'),
-
-            // FilemanagerField::make('Image'),
+            Slug::make('Slug'),
             
             Markdown::make('Post Content', 'content'),
             
-            Trix::make('Excerpt'),
+            Textarea::make('Excerpt'),
 
             Tags::make('Tags'),
 
