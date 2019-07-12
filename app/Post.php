@@ -19,6 +19,10 @@ class Post extends Model
         'author' => 'Faysal Ahamed',
     ];
 
+    public function getRouteKeyName() {
+        return 'slug';
+    }
+
     public function processed_content()
     {
         return Markdown::convertToHtml($this->content);

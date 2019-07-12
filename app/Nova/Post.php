@@ -55,12 +55,13 @@ class Post extends Resource
 
             Text::make('Author')
                 ->hideWhenCreating()
-                ->hideWhenUpdating(),
+                ->hideWhenUpdating()
+                ->hideFromIndex(),
 
             TextWithSlug::make('Post Title', 'title')
                 ->slug('slug'),
 
-            Slug::make('Slug'),
+            Slug::make('Slug')->hideFromIndex(),
             
             Markdown::make('Post Content', 'content'),
             
@@ -72,7 +73,7 @@ class Post extends Resource
 
             Boolean::make('Featured'),
 
-            DateTime::make('Published at', 'published_at')
+            DateTime::make('Published at', 'published_at')->format('DD MMM YYYY')
             
         ];
     }
