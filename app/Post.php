@@ -19,12 +19,23 @@ class Post extends Model
         'author' => 'Faysal Ahamed',
     ];
 
-    public function getRouteKeyName() {
+    public function getRouteKeyName() 
+    {
         return 'slug';
+    }
+
+    public function path()
+    {
+        return '/' . $this->slug;
     }
 
     public function processed_content()
     {
         return Markdown::convertToHtml($this->content);
+    }
+
+    public function getReadingTimeAttribute(): int
+    {
+        return (int)ceil(str_word_count(strip_tags($this->content)) / 200);
     }
 }

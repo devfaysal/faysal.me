@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('author')->default('Faysal Ahamed');
             $table->string('title');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->longText('content');
             $table->text('excerpt');
             $table->boolean('published')->default(false);

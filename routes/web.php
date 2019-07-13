@@ -16,6 +16,7 @@ use GrahamCampbell\Markdown\Facades\Markdown;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/nova', '/nova/login');
 
 Route::get('/', [HomeController::class, 'index']);
 

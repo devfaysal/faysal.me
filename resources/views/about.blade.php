@@ -3,7 +3,7 @@
 ])
 
 @section('content')
-    <h1 class="max-w-lg text-3xl md:text-4xl text-gray-700 font-extrabold leading-tight mb-1">About me</h1>
+    <h1 class="max-w-lg text-3xl md:text-4xl font-slab text-gray-700 font-extrabold leading-tight mb-1">About me</h1>
     <p class="leading-relaxed mb-6 text-lg text-gray-700">
         Hi, I'm Faysal. I'm a full-stack web developer from Dhaka, Bangladesh.
     </p>

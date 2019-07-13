@@ -61,7 +61,10 @@ class Post extends Resource
             TextWithSlug::make('Post Title', 'title')
                 ->slug('slug'),
 
-            Slug::make('Slug')->hideFromIndex(),
+            Slug::make('Slug')
+                ->rules('required')
+                ->creationRules('unique:posts')
+                ->hideFromIndex(),
             
             Markdown::make('Post Content', 'content'),
             

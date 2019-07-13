@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             'remember_token' => Str::random(10),
         ]);
 
-        factory('App\Post', 10)->create();
+        factory('App\Post', 10)->create()->each( function($post){
+            $post->attachTags(['Lorem', 'Ipsum']);
+        });
     }
 }

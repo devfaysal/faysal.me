@@ -11,7 +11,7 @@ $factory->define(Post::class, function (Faker $faker) {
         'author'    => 'Faysal Ahamed',
         'title'     => $title = $faker->sentence,
         'slug'      => Str::slug($title),
-        'content'   => $faker->text(500),
+        'content'   => $faker->text(1500),
         'excerpt'   => $faker->paragraph,
         'published' => $faker->boolean,
         'featured'  => $faker->boolean,

@@ -13,6 +13,10 @@
         <title>Faysal Ahamed</title>
     @endisset
 
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|Merriweather:400,400i,700,700i|Zilla+Slab:300,300i,400,400i&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
 </head>
@@ -25,7 +29,7 @@
                 </a>
                 <div class="sm:ml-6">
                     <a href="/" class="no-underline text-gray-700">
-                        <h1 class="font-bold text-4xl mb-1 text-center sm:text-left">Faysal Ahamed</h1>
+                        <h1 class="font-bold text-4xl mb-1 font-slab text-center sm:text-left">Faysal Ahamed</h1>
                     </a>
                     <p class="text-gray-600 mb-3 text-center sm:text-left">Full-stack Web Developer</p>
                     <div class="flex justify-center text-center md:justify-start">
@@ -61,7 +65,7 @@
         <main>
             @yield('content')
         </main>
-        <footer class="flex justify-between pt-4">
+        <footer class="flex justify-between pt-4 pb-8">
             {{-- <a href="/privacy-policy" class="text-sm text-gray-500 no-underline hover:underline">Privacy Policy</a> --}}
             <span class="text-sm text-gray-500">© {{date('Y')}} Faysal Ahamed</span>
         </footer>
