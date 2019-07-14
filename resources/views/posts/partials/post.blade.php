@@ -7,7 +7,7 @@
         </div>
     @else 
         <div class="markdown text-lg text-gray-900 leading-relaxed">
-            {!! $post->processed_content() !!}
+            {!! $post->processed_content !!}
         </div>
     @endisset
 </article>

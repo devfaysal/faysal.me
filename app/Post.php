@@ -29,7 +29,7 @@ class Post extends Model
         return '/' . $this->slug;
     }
 
-    public function processed_content()
+    public function getProcessedContentAttribute()
     {
         return Markdown::convertToHtml($this->content);
     }

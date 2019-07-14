@@ -5,6 +5,7 @@ namespace App\Nova;
 use Spatie\TagsField\Tags;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Boolean;
@@ -53,28 +54,37 @@ class Post extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Author')
-                ->hideWhenCreating()
-                ->hideWhenUpdating()
-                ->hideFromIndex(),
-
             TextWithSlug::make('Post Title', 'title')
-                ->slug('slug'),
+                ->slug('slug')
+                ->rules('required'),
 
             Slug::make('Slug')
                 ->rules('required')
                 ->creationRules('unique:posts')
                 ->hideFromIndex(),
             
-            Markdown::make('Post Content', 'content'),
+            FilemanagerField::make('Image')->displayAsImage(),
             
-            Textarea::make('Excerpt'),
+            Markdown::make('Post Content', 'content')
+                ->rules('required'),
+            
+            Code::make('Styles')
+                    ->language('sass'),
+
+            Code::make('Scripts')
+                ->language('javascript'),
 
             Tags::make('Tags'),
 
             Boolean::make('Published'),
 
             Boolean::make('Featured'),
+
+            Text::make('Author')
+                ->withMeta([
+                    'value' => auth()->user()->name ?? '',
+                ])
+                ->hideFromIndex(),
 
             DateTime::make('Published at', 'published_at')->format('DD MMM YYYY')
             
