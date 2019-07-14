@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app', [
+    'title' => $post->title
+])
 
 @section('content')
     @include('posts.partials.post', [
