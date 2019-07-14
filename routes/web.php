@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AboutController;
 use GrahamCampbell\Markdown\Facades\Markdown;
+use Spatie\ResponseCache\Facades\ResponseCache;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,25 @@ use GrahamCampbell\Markdown\Facades\Markdown;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/test', function(){
+
+    //ResponseCache::forget('/modi-eius-laudantium-aut-nemo-velit');
+
+    ResponseCache::clear();
+
+    // dd($x);
+    // $post = App\Post::find(3);
+
+    // dd($post->tags[0]->name);
+
+    // return view('post', [
+    //     'post' => $post
+    // ]);
+});
+
+//To cache route use ->middleware('cacheResponse:300')
+
 Route::redirect('/nova', '/nova/login');
 
 Route::get('/', [HomeController::class, 'index']);
@@ -25,13 +45,3 @@ Route::get('/about', [AboutController::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
 
 Route::get('/{post}', [PostController::class, 'show']);
-
-Route::get('/post', function(){
-    $post = App\Post::find(3);
-
-    dd($post->tags[0]->name);
-
-    return view('post', [
-        'post' => $post
-    ]);
-});
