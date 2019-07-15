@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
@@ -18,21 +19,9 @@ use Spatie\ResponseCache\Facades\ResponseCache;
 |
 */
 
-Route::get('/test', function(){
+// Route::get('/test', function(){
 
-    //ResponseCache::forget('/modi-eius-laudantium-aut-nemo-velit');
-
-    ResponseCache::clear();
-
-    // dd($x);
-    // $post = App\Post::find(3);
-
-    // dd($post->tags[0]->name);
-
-    // return view('post', [
-    //     'post' => $post
-    // ]);
-});
+// });
 
 //To cache route use ->middleware('cacheResponse:300')
 

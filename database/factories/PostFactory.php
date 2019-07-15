@@ -12,6 +12,7 @@ $factory->define(Post::class, function (Faker $faker) {
         'title'     => $title = $faker->sentence,
         'slug'      => Str::slug($title),
         'content'   => $faker->text(1500),
+        'excerpt'   => $faker->text(200),
         'image'   => 'lorem.jpg',
         'styles'   => '',
         'scripts'   => '',

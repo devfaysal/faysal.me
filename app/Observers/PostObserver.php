@@ -3,10 +3,27 @@
 namespace App\Observers;
 
 use App\Post;
+use Illuminate\Support\Str;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
 class PostObserver
 {
+
+    public function creating(Post $post)
+    {
+        $post->author = 'Faysal Ahamed';
+
+        $markup = Markdown::convertToHtml($post->content);
+
+        $post->excerpt = Str::limit(strip_tags($markup), 200, ' ...');
+
+        if($post->published){
+            $post->published_at  = date(time());
+        }
+    }
+
+
     /**
      * Handle the post "created" event.
      *

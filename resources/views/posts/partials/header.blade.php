@@ -1,4 +1,4 @@
-<header class="mb-4">
+<header class="mb-2">
     <h1 class="pt-1 pb-2 text-2xl md:text-3xl font-slab font-semibold text-gray-700">
         @isset($blog)
             <a href="{{$post->path()}}">{{$post->title}}</a>
@@ -7,7 +7,7 @@
         @endisset
     </h1>
 
-    <p class="text-sm text-gray-700">
+    <p class="text-sm text-gray-700 leading-loose">
         <time datetime="{{ optional($post->published_at)->format(DateTime::ATOM) }}">
             {{ optional($post->published_at)->format('jS M Y') }}
         </time>

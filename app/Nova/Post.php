@@ -67,6 +67,9 @@ class Post extends Resource
             
             Markdown::make('Post Content', 'content')
                 ->rules('required'),
+
+            Textarea::make('Excerpt')
+                ->hideWhenCreating(),
             
             Code::make('Styles')
                     ->language('sass'),

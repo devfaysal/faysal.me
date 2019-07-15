@@ -15,10 +15,6 @@ class Post extends Model
 
     public $dates = ['published_at'];
 
-    protected $attributes = [
-        'author' => 'Faysal Ahamed',
-    ];
-
     public function getRouteKeyName() 
     {
         return 'slug';
