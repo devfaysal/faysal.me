@@ -19,6 +19,15 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
+    @isset($post)
+        @include('posts.partials.facebook')
+    @else
+        <meta name="description" content="Faysal Ahamed is a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress. ">
+        <meta property="og:site_name" content="Faysal Ahamed">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:description" content="Faysal Ahamed is a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress.">
+        <meta property="og:url" content="{{ request()->fullUrl() }}">
+    @endisset
 </head>
 <body class="bg-gray-200 leading-tight">
     <div class="max-w-2xl mx-auto px-6">
