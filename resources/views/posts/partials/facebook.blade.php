@@ -4,3 +4,5 @@
 <meta property="og:title" content="{{$post->title}}" />
 <meta property="og:description" content="{{$post->excerpt}}" />
 <meta property="og:image" content="{{asset('public/'.$post->image)}}" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="500" />
