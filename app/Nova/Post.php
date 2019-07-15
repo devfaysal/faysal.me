@@ -89,7 +89,15 @@ class Post extends Resource
                 ])
                 ->hideFromIndex(),
 
-            DateTime::make('Published at', 'published_at')->format('DD MMM YYYY')
+            DateTime::make('Published at', 'published_at')->format('DD MMM YYYY'),
+
+            Text::make('', function () {
+                    if (! $this->exists) {
+                        return '';
+                    }
+
+                    return '<a target="_blank" href="' . url($this->slug) . '">URL</a>';
+                })->asHtml(),
             
         ];
     }
