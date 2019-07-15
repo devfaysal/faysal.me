@@ -20,7 +20,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
     @isset($post)
-        @include('posts.partials.facebook')
+        @include('posts.partials.socialSeo')
     @else
         <meta name='description' content="Faysal Ahamed is a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress. ">
         <meta property='og:site_name' content="Faysal Ahamed">
