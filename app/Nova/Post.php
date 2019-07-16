@@ -64,6 +64,8 @@ class Post extends Resource
                 ->hideFromIndex(),
             
             FilemanagerField::make('Image')->displayAsImage(),
+
+            Text::make('Image Credit')->hideFromIndex(),
             
             Markdown::make('Post Content', 'content')
                 ->rules('required'),

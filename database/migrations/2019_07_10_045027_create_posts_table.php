@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->longText('content');
             $table->text('excerpt')->nullable();
             $table->string('image')->nullable();
+            $table->text('image_credit')->nullable();
             $table->text('styles')->nullable();
             $table->text('scripts')->nullable();
             $table->boolean('published')->default(false);

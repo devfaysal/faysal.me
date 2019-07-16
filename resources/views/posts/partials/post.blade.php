@@ -10,9 +10,12 @@
         @if(Storage::disk('public')->exists($post->image))
             <div class="mb-2">
                 <img src="{{asset('storage/' . $post->image)}}" alt="{{$post->title}}">
+                @isset($post->image_credit)
+                    <p class="text-right text-gray-600 text-xs markup pt-2">{!! $post->image_credit !!}</p>
+                @endisset
             </div>
         @endif
-        <div class="markdown text-lg text-gray-800 leading-relaxed">
+        <div class="markup text-lg text-gray-800 leading-relaxed">
             {!! $post->processed_content !!}
         </div>
     @endisset

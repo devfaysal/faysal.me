@@ -1,6 +1,12 @@
 let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
+mix.webpackConfig({
+   watchOptions: {
+      ignored: /node_modules/
+   }
+});
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

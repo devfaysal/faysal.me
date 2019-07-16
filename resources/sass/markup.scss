@@ -1,8 +1,16 @@
-.markdown p{
+.markup p{
     margin-bottom: 1rem;
 }
 
-.markdown pre{
+.markup a{
+    @apply underline text-blue-600;
+}
+
+.markup a:hover{
+    @apply text-blue-800;
+}
+
+.markup pre{
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: auto;
@@ -12,7 +20,7 @@
     padding: 1rem;
 }
 
-.markdown code, .markdown pre > code{
+.markup code, .markup pre > code{
     font-size: 14px;
     background-color: transparent;
     color: #555;

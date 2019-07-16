@@ -7701,11 +7701,20 @@ video {
   z-index: auto;
 }
 
-.markdown p {
+.markup p {
   margin-bottom: 1rem;
 }
 
-.markdown pre {
+.markup a {
+  text-decoration: underline;
+  color: #3182ce;
+}
+
+.markup a:hover {
+  color: #2c5282;
+}
+
+.markup pre {
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: auto;
@@ -7715,7 +7724,7 @@ video {
   padding: 1rem;
 }
 
-.markdown code, .markdown pre > code {
+.markup code, .markup pre > code {
   font-size: 14px;
   background-color: transparent;
   color: #555;
