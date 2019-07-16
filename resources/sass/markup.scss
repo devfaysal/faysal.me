@@ -10,6 +10,23 @@
     @apply text-blue-800;
 }
 
+.markup ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.markup h1{
+    @apply text-3xl py-4;
+}
+
+.markup h2{
+    @apply text-2xl py-3;
+}
+
+.markup h3{
+    @apply text-xl py-2;
+}
+
 .markup pre{
     margin-top: 20px;
     margin-bottom: 20px;

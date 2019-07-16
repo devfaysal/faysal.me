@@ -7714,6 +7714,29 @@ video {
   color: #2c5282;
 }
 
+.markup ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.markup h1 {
+  font-size: 1.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.markup h2 {
+  font-size: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.markup h3 {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .markup pre {
   margin-top: 20px;
   margin-bottom: 20px;
