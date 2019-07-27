@@ -28,6 +28,17 @@
         <meta property='og:description' content="Faysal Ahamed is a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress.">
         <meta property='og:url' content="{{ request()->fullUrl() }}">
     @endisset
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144706059-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144706059-1');
+    </script>
+    
 </head>
 <body class="bg-gray-200 leading-tight">
     <div class="max-w-2xl mx-auto px-6">
