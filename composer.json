@@ -14,7 +14,6 @@
         "graham-campbell/markdown": "^11.1",
         "infinety-es/nova-filemanager": "^2.2",
         "laravel/framework": "^6.0",
-        "laravel/helpers": "^1.1",
         "laravel/nova": "~2.0",
         "laravel/tinker": "^1.0",
         "spatie/laravel-responsecache": "^6.0",
