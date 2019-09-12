@@ -29,6 +29,8 @@ Route::redirect('/nova', '/nova/login');
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::view('/resume', 'resume');
+
 Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
