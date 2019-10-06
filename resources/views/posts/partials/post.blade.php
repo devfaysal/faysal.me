@@ -16,7 +16,7 @@
             </div>
         @endif
         <div class="markup text-lg text-gray-800 leading-relaxed">
-            {!! $post->processed_content !!}
+            {!! $post->content !!}
         </div>
     @endisset
 </article>

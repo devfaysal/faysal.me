@@ -67,8 +67,9 @@ class Post extends Resource
 
             Text::make('Image Credit')->hideFromIndex(),
             
-            Markdown::make('Post Content', 'content')
-                ->rules('required'),
+            Trix::make('Post Content', 'content')
+                ->rules('required')
+                ->withFiles('public'),
 
             Textarea::make('Excerpt')
                 ->hideWhenCreating(),
