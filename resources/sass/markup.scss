@@ -54,3 +54,11 @@
     tab-size: 4;
     padding: 0 1rem;
 }
+
+.markup ol{
+    @apply list-decimal list-inside;
+}
+
+.markup ol li ol{
+    @apply list-decimal list-inside pl-8;
+}
