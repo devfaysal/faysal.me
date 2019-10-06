@@ -73,11 +73,11 @@ class Post extends Resource
             Textarea::make('Excerpt')
                 ->hideWhenCreating(),
             
-            Code::make('Styles')
-                    ->language('sass'),
+            // Code::make('Styles')
+            //         ->language('sass'),
 
-            Code::make('Scripts')
-                ->language('javascript'),
+            // Code::make('Scripts')
+            //     ->language('javascript'),
 
             Tags::make('Tags'),
 
