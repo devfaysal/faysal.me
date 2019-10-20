@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AboutController;
 use GrahamCampbell\Markdown\Facades\Markdown;
+use App\Http\Controllers\IslamicPostController;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
 /*
@@ -34,5 +35,8 @@ Route::view('/resume', 'resume');
 Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
+
+Route::get('/islam', [IslamicPostController::class, 'index']);
+Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
 
 Route::get('/{post}', [PostController::class, 'show']);
