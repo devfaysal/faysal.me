@@ -57,7 +57,7 @@ class IslamicPost extends Resource
 
             Slug::make('Slug')
                 ->rules('required')
-                ->creationRules('unique:posts')
+                ->creationRules('unique:islamic_posts')
                 ->hideFromIndex(),
             
             FilemanagerField::make('Image')->displayAsImage(),
