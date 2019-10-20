@@ -4,11 +4,9 @@ namespace App;
 
 use Spatie\Tags\HasTags;
 use Illuminate\Database\Eloquent\Model;
-use GrahamCampbell\Markdown\Facades\Markdown;
 
 class Post extends Model
 {
-
     use HasTags;
 
     public $with = ['tags'];
@@ -23,11 +21,6 @@ class Post extends Model
     public function path()
     {
         return '/' . $this->slug;
-    }
-
-    public function getProcessedContentAttribute()
-    {
-        return Markdown::convertToHtml($this->content);
     }
 
     public function getReadingTimeAttribute(): int

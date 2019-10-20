@@ -9,8 +9,6 @@ class IslamicPost extends Model
 {
     use HasTags;
 
-    use HasTags;
-
     public $with = ['tags'];
 
     public $dates = ['published_at'];

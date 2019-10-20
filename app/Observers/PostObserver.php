@@ -4,7 +4,6 @@ namespace App\Observers;
 
 use App\Post;
 use Illuminate\Support\Str;
-use GrahamCampbell\Markdown\Facades\Markdown;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
 class PostObserver
@@ -14,9 +13,7 @@ class PostObserver
     {
         $post->author = 'Faysal Ahamed';
 
-        $markup = Markdown::convertToHtml($post->content);
-
-        $post->excerpt = Str::limit(strip_tags($markup), 200, ' ...');
+        $post->excerpt = Str::limit(strip_tags($post->content), 200, ' ...');
 
         if($post->published){
             $post->published_at  = date(time());

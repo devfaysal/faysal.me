@@ -11,7 +11,6 @@
         "php": "^7.2",
         "benjaminhirsch/nova-slug-field": "^1.2",
         "fideloper/proxy": "^4.0",
-        "graham-campbell/markdown": "^11.1",
         "infinety-es/nova-filemanager": "^2.2",
         "laravel/framework": "^6.0",
         "laravel/nova": "~2.0",

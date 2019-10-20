@@ -5,14 +5,11 @@ namespace App\Nova;
 use Spatie\TagsField\Tags;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\BelongsTo;
 use Benjaminhirsch\NovaSlugField\Slug;
 use Infinety\Filemanager\FilemanagerField;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -99,7 +96,7 @@ class Post extends Resource
                         return '';
                     }
 
-                    return '<a target="_blank" href="' . url($this->slug) . '">URL</a>';
+                    return '<a target="_blank" href="' . url($this->path()) . '">URL</a>';
                 })->asHtml(),
             
         ];
