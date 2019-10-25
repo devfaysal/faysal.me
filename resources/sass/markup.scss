@@ -62,3 +62,7 @@
 .markup ol li ol{
     @apply list-decimal list-inside pl-8;
 }
+
+.markup .attachment__caption{
+    display: none;
+}
