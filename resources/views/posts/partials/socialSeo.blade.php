@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{$post->title}} | Faysal Ahamed" />
 <meta property="og:description" content="{{$post->excerpt}}" />
-<meta property="og:image" content="{{asset('storage/'.$post->image)}}" />
+<meta property="og:image" content="{{$post->image ? asset('storage/'.$post->image) : route('socialCardImage', $post->slug)}}" />
 <meta property="og:image:width" content="1000" />
 <meta property="og:image:height" content="500" />
 
@@ -17,5 +17,5 @@
 <meta name="twitter:description" content="{{$post->excerpt}}" />
 <meta name="twitter:title" content="{{$post->title}} | Faysal Ahamed" />
 <meta name="twitter:site" content="@devfaysal" />
-<meta name="twitter:image" content="{{asset('storage/'.$post->image)}}" />
+<meta name="twitter:image" content="{{$post->image ? asset('storage/'.$post->image) : route('socialCardImage', $post->slug)}}" />
 <meta name="twitter:creator" content="@devfaysal" />

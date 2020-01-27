@@ -14,7 +14,7 @@
 
         by {{$post->author}}
 
-        &middot; {{ $post->reading_time }} minute read
+        &middot; {{ $post->reading_time }}
 
         @if(!$post->tags->isEmpty())
             &middot;

@@ -8,6 +8,7 @@ use App\Http\Controllers\AboutController;
 use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Http\Controllers\IslamicPostController;
 use Spatie\ResponseCache\Facades\ResponseCache;
+use App\Http\Controllers\OpenGraphImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,4 @@ Route::get('/islam', [IslamicPostController::class, 'index']);
 Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
 
 Route::get('/{post}', [PostController::class, 'show']);
+Route::get('/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
