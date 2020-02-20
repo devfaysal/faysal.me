@@ -133,4 +133,17 @@ return [
         'resource' => ActionResource::class,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Nova Currency
+    |--------------------------------------------------------------------------
+    |
+    | This configuration option allows you to specify the default currency
+    | used by the Currency field within Nova. You may change this to any
+    | valid ISO 4217 currency code to suit your specific needs.
+    |
+    */
+
+    'currency' => 'USD',
+
 ];
