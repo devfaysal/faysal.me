@@ -29,6 +29,9 @@ module.exports = {
         twitter: '#1da1f2',
         github: '#4078c0',
         facebook: '#4267b2',
+      },
+      screens: {
+        'print': { 'raw': 'print' },
       }
     }
   },

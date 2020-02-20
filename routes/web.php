@@ -1,5 +1,7 @@
 <?php
 
+use App\Post;
+use PDF;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
