@@ -1,13 +1,10 @@
 <?php
 
-use App\Post;
-use PDF;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AboutController;
-use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Http\Controllers\IslamicPostController;
 use Spatie\ResponseCache\Facades\ResponseCache;
 use App\Http\Controllers\OpenGraphImageController;
