@@ -26,7 +26,7 @@ use App\Http\Controllers\OpenGraphImageController;
 
 //To cache route use ->middleware('cacheResponse:300')
 
-Route::redirect('/nova', '/nova/login');
+// Route::redirect('/nova', '/nova/login');
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -36,8 +36,8 @@ Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/blog', [BlogController::class, 'index']);
 
-Route::get('/islam', [IslamicPostController::class, 'index']);
-Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
+// Route::get('/islam', [IslamicPostController::class, 'index']);
+// Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
 
-Route::get('/posts/{post}', [PostController::class, 'show']);
-Route::get('/posts/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
+// Route::get('/posts/{post}', [PostController::class, 'show']);
+// Route::get('/posts/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
