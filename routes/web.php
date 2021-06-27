@@ -1,13 +1,15 @@
 <?php
 
-use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\AboutController;
 use App\Http\Controllers\IslamicPostController;
-use Spatie\ResponseCache\Facades\ResponseCache;
 use App\Http\Controllers\OpenGraphImageController;
+use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\Storage;
+use Spatie\ResponseCache\Facades\ResponseCache;
+use Statamic\Entries\Collection;
+use Statamic\Entries\Entry;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,12 +29,20 @@ use App\Http\Controllers\OpenGraphImageController;
 //To cache route use ->middleware('cacheResponse:300')
 
 // Route::redirect('/nova', '/nova/login');
+Route::get('/test', function(){
+    $entries = Entry::whereCollection('posts');
 
-Route::get('/', [HomeController::class, 'index']);
+    foreach($entries as $entry){
+        echo $entry->title;
+        echo '<br/>';
+    }
+});
 
-Route::view('/resume', 'resume');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/about', [AboutController::class, 'index']);
+Route::view('/resume', 'resume')->name('resume');
+
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/blog', [BlogController::class, 'index']);
 

@@ -78,9 +78,9 @@
             </div>
         </header>
         <nav class="flex justify-around flex-wrap border-gray-400 border-t border-b mb-8">
-            <a href="/" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase tracking-wide no-underline hover:underline hover:text-gray-600">Home</a>
-            <a href="/about" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase tracking-wide no-underline hover:underline hover:text-gray-600">About</a>
-            <a href="/blog" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase tracking-wide no-underline hover:underline hover:text-gray-600">Blog</a>
+            <a href="/" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase no-underline hover:underline hover:text-gray-600">Home</a>
+            <a href="/about" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase no-underline hover:underline hover:text-gray-600">About</a>
+            <a href="/blog" class="m-2 inline-block text-gray-700 text-sm tracking-wider uppercase no-underline hover:underline hover:text-gray-600">Blog</a>
         </nav>
         <main>
             @yield('content')
