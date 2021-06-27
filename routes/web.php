@@ -30,7 +30,7 @@ use Statamic\Entries\Entry;
 
 // Route::redirect('/nova', '/nova/login');
 Route::get('/test', function(){
-    $entries = Entry::whereCollection('posts');
+    $entries = Entry::whereCollection('posts')->published();
 
     foreach($entries as $entry){
         echo $entry->title;

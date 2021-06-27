@@ -1,0 +1,51 @@
+title: Posts
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: excerpt
+        field:
+          character_limit: '250'
+          antlers: false
+          display: Excerpt
+          type: textarea
+          icon: textarea
+          listable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: featured
+        field:
+          display: Featured
+          type: toggle
+          icon: toggle
+          listable: true
