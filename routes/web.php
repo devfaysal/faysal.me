@@ -39,5 +39,5 @@ Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/islam', [IslamicPostController::class, 'index']);
 Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
 
-Route::get('/{post}', [PostController::class, 'show']);
-Route::get('/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
+Route::get('/posts/{post}', [PostController::class, 'show']);
+Route::get('/posts/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
