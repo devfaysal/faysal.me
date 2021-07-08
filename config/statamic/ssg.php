@@ -62,6 +62,7 @@ return [
         '/',
         '/resume',
         '/about',
+        '/blog'
     ],
 
     /*
