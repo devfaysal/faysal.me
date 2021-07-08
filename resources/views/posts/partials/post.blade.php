@@ -6,7 +6,7 @@
             {{$post->excerpt}}
         </div>
         <pre></pre>
-        <p class="mt-3"><a class="underline text-blue-600" href="{{ $post->path() }}">Read more</a></p>
+        <p class="mt-3"><a class="underline text-blue-600" href="{{ route('posts.show', $post->slug()) }}">Read more</a></p>
     @else 
         @if(Storage::disk('public')->exists($post->image))
             <div class="mb-2">
@@ -16,8 +16,8 @@
                 @endisset
             </div>
         @endif
-        <div class="markup text-lg text-gray-800 leading-relaxed">
-            {!! $post->content !!}
+        <div class="content text-lg text-gray-800 leading-relaxed">
+            {!! Statamic\Modifiers\Modify::value($post->content)->markdown()  !!}
         </div>
     @endisset
 </article>

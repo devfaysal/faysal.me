@@ -49,3 +49,11 @@ sections:
           type: toggle
           icon: toggle
           listable: true
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select

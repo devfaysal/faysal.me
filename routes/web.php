@@ -30,7 +30,10 @@ use Statamic\Entries\Entry;
 
 // Route::redirect('/nova', '/nova/login');
 Route::get('/test', function(){
-    $entries = Entry::whereCollection('posts')->published();
+    $entries = Entry::query()
+    ->where('collection', 'posts')
+    ->where('published', true)
+    ->get();
 
     foreach($entries as $entry){
         echo $entry->title;
@@ -49,5 +52,7 @@ Route::get('/blog', [BlogController::class, 'index']);
 // Route::get('/islam', [IslamicPostController::class, 'index']);
 // Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
 
-// Route::get('/posts/{post}', [PostController::class, 'show']);
+Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
 // Route::get('/posts/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
+
+// Route::statamic('/posts/{post}', 'test');
