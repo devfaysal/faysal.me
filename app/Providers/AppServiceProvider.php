@@ -45,6 +45,7 @@ class AppServiceProvider extends ServiceProvider
         $urls = [];
         foreach($posts as $post){
             $urls[] = route('posts.show', $post->slug());
+            $urls[] = route('posts.show.old', $post->slug());
         }
 
         return $urls;

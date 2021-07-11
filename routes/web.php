@@ -48,11 +48,7 @@ Route::view('/resume', 'resume')->name('resume');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/blog', [BlogController::class, 'index']);
-
-// Route::get('/islam', [IslamicPostController::class, 'index']);
-// Route::get('/islam/{post}', [IslamicPostController::class, 'show']);
-
+Route::get('/{slug}', function($slug){
+    return redirect()->route('posts.show', $slug);
+})->name('posts.show.old');
 Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
-// Route::get('/posts/{post}/image.png', [OpenGraphImageController::class, 'show'])->name('socialCardImage');
-
-// Route::statamic('/posts/{post}', 'test');
