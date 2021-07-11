@@ -49,6 +49,9 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/{slug}', function($slug){
+    if($slug == 'cp'){
+        return redirect('/admin/cp');
+    }
     return redirect()->route('posts.show', $slug);
 })->name('posts.show.old');
 Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');
