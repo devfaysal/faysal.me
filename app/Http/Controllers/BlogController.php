@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
-use Illuminate\Http\Request;
 use Statamic\Entries\Entry;
 
 class BlogController extends Controller
@@ -17,6 +15,7 @@ class BlogController extends Controller
             ->get();
 
         return view('blog.index', [
+            'blog' => true,
             'posts' => $posts
         ]);
     }

@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use GDText\Box;
 use GDText\Color;
-use App\Post;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Str;
+use Statamic\Entries\Entry;
 
 class OpenGraphImageController extends Controller
 {
@@ -16,11 +16,12 @@ class OpenGraphImageController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post, $domain = null)
+    public function show($slug)
     {
+        $post = Entry::query()->where('slug', $slug)->first();
         $blog = 'Faysal Ahamed';
         $title = $post->title;
-        $time = $post->readingTime;
+        $time = $this->readingTime($post->content);
         $key = md5("opengraph.{$blog}.{$title}.{$time}");
 
         $image = Cache::remember($key, now()->addDays(1), function () use ($blog, $title, $time) {
@@ -67,5 +68,12 @@ class OpenGraphImageController extends Controller
 
         return response($image, 200)
             ->header('Content-Type', 'image/png');
+    }
+
+    public function readingTime($content)
+    {
+        $time = (int)ceil(str_word_count(strip_tags($content)) / 200);
+        $text = Str::plural('minute', $time);
+        return $time . ' ' . $text . ' read';
     }
 }

@@ -32,8 +32,6 @@ class AppServiceProvider extends ServiceProvider
         SSG::addUrls(function () {
             return $this->dynamicUrls();
         });
-        Post::observe(PostObserver::class);
-        IslamicPost::observe(IslamicPostObserver::class);
     }
 
     public function dynamicUrls()

@@ -1,9 +1,11 @@
 title: Posts
+template: default
+layout: layout
 taxonomies:
   - tags
 revisions: false
 date: true
-sort_dir: asc
+sort_dir: desc
 default_status: draft
 date_behavior:
   past: public

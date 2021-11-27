@@ -6,5 +6,5 @@
     @include('posts.partials.post', [
         'class' => 'mb-4'
     ])
-    @include('posts.partials.disqus')
+    {{-- @include('posts.partials.disqus') --}}
 @endsection
