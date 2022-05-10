@@ -44,16 +44,16 @@
                     <span class="inline-block pl-2">Dhaka Cantonment, Dhaka 1206, Bangladesh</span>
                 </p>
                 <p class="flex text-gray-600">
-                    <svg class="w-4" aria-hidden="true" alt="E-mail" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
-                    </svg>
-                    <span class="inline-block pl-2"><a href="mailto:devfaysal@gmail.com">devfaysal@gmail.com</a></span>
-                </p>
-                <p class="flex text-gray-600">
                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path fill="currentColor" d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
                     <span class="inline-block pl-2"><a href="tel:+8801717718110">+8801717718110</a></span>
+                </p>
+                <p class="flex text-gray-600">
+                    <svg class="w-4" aria-hidden="true" alt="E-mail" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path>
+                    </svg>
+                    <span class="inline-block pl-2"><a href="mailto:devfaysal@gmail.com">devfaysal@gmail.com</a></span>
                 </p>
                 <p class="flex text-gray-600">
                     <svg class="w-4" aria-hidden="true" alt="GitHub" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
@@ -62,10 +62,16 @@
                     <span class="inline-block pl-2"><a target="_blank" href="https://github.com/devfaysal/">devfaysal</a></span>
                 </p>
                 <p class="flex text-gray-600">
+                    <svg class="w-4" aria-hidden="true" alt="Twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" xml:space="preserve">
+                        <path fill="currentColor" d="M302.973 57.388a117.512 117.512 0 0 1-14.993 5.463 66.276 66.276 0 0 0 13.494-23.73 5 5 0 0 0-7.313-5.824 117.994 117.994 0 0 1-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 0 0-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 0 1-8.907-3.977 5 5 0 0 0-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 0 1-5.063-.735 4.998 4.998 0 0 0-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 0 1-14.095-.826 5 5 0 0 0-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 0 0-6.182-7.351z"/>
+                    </svg>
+                    <span class="inline-block pl-2"><a target="_blank" href="https://twitter.com/devfaysal/">devfaysal</a></span>
+                </p>
+                <p class="flex text-gray-600">
                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line>
                         <path fill="none" d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                     </svg>
-                    <span class="inline-block pl-2"><a target="_blank" href="http://faysal.me">faysal.me</a></span>
+                    <span class="inline-block pl-2"><a target="_blank" href="https://faysal.me">faysal.me</a></span>
                 </p>
             </div>
         </div>
@@ -74,7 +80,7 @@
                 <p class="text-xl text-right text-gray-600 font-bold">About me</p>
             </div>
             <div class="w-3/4 mt-1">
-                <p class="text-gray-600 font-medium">I'm a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vuejs and WordPress. I am an early adopter of new versions of software/language/framework.</p>
+                <p class="text-gray-600 font-medium">I'm a full-stack web developer who loves working with PHP, Laravel, Livewire and WordPress. I am an early adopter of new versions of software/language/framework.</p>
             </div>
         </div>
         <div class="flex mb-6">
@@ -82,8 +88,8 @@
                 <p class="text-xl text-right text-gray-600 font-bold">Dev setup</p>
             </div>
             <div class="w-3/4 mt-1">
-                <p class="text-gray-600 font-medium">OS: Ubuntu 18.04</p>
-                <p class="text-gray-600 font-medium">IDE: VS Code</p>
+                <p class="text-gray-600 font-medium">OS: Ubuntu 22.04</p>
+                <p class="text-gray-600 font-medium">IDE: VS Code, PhpStorm</p>
                 <p class="text-gray-600 font-medium">Browser: Firefox</p>
             </div>
         </div>
@@ -96,6 +102,7 @@
                 <p class="text-sm text-gray-600">May 2016 - October 2017</p>
                 <span class="block py-1"></span>
                 <p class="text-gray-600 font-bold">Web Developer at <a href="http://surovigroup.com/">Surovi Group</a></p>
+                <p class="text-gray-600">Developing HRM and CRM software with Laravel</p>
                 <p class="text-sm text-gray-600">October 2017 - Present</p>
             </div>
         </div>
@@ -104,14 +111,20 @@
                 <p class="text-xl text-right text-gray-600 font-bold">Skills</p>
             </div>
             <div class="w-3/4 mt-1">
-                <p class="text-gray-600 font-bold">PHP</p>
-                <p class="text-gray-600 font-medium">Laravel,WordPress,Symfony</p>
+                <p class="text-gray-600"><span class="font-bold">PHP/Laravel Framework:</span> Livewire, Statamic, Multi tenant saas app, Modular app</p>
+                <span class="block py-1"></span>
+                <p class="text-gray-600"><span class="font-bold">PHP/WordPress CMS:</span> WooCommerce, Advanced Custom Field, Divi, Elementor, Any page builder, Custom theme/plugin development</p>
+                <span class="block py-1"></span>
+                <p class="text-gray-600"><span class="font-bold">Shopify:</span> Liquid template/theme customization</p>
                 <span class="block py-1"></span>
                 <p class="text-gray-600 font-bold">Javascript</p>
-                <p class="text-gray-600 font-medium">jQuery,Vue.js</p>
+                <p class="text-gray-600 font-medium">jQuery, Vue.js, Alpine.js</p>
                 <span class="block py-1"></span>
-                <p class="text-gray-600 font-bold">Server Related</p>
-                <p class="text-gray-600 font-medium">LAMP/LEMP</p>
+                <p class="text-gray-600 font-bold">Css</p>
+                <p class="text-gray-600 font-medium">Tailwind Css, Bootstrap</p>
+                <span class="block py-1"></span>
+                <p class="text-gray-600 font-bold">Server</p>
+                <p class="text-gray-600 font-medium">Ubuntu/Debian server setup with Apache/nginx and deploy application using git</p>
             </div>
         </div>
     </div>
