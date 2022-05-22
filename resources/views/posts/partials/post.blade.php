@@ -5,7 +5,6 @@
         <div class="excerpt text-lg text-gray-800 leading-relaxed">
             {{$post->excerpt}}
         </div>
-        <pre></pre>
         <p class="mt-3"><a class="underline text-blue-600" href="{{ route('posts.show', $post->slug()) }}">Read more</a></p>
     @else 
         @if(Storage::disk('public')->exists($post->image))
