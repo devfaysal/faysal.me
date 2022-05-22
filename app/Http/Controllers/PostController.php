@@ -9,9 +9,9 @@ class PostController extends Controller
 {
     public function show($slug)
     {
-        $post = Entry::query()->where('slug', $slug)->first();
-        // dd($post->date()->toIso8601String());
-        // dd(Carbon::createFromTimestamp($post->updated_at)->toIso8601String());
+        $post = Entry::query()
+            ->where('collection', 'posts')
+            ->where('slug', $slug)->first();
         return view('posts.show', [
             'post' => $post
         ]);

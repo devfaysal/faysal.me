@@ -17,7 +17,7 @@
         @if($post->tags && count($post->tags) > 0)
             &middot;
             @foreach($post->tags as $tag)
-                <a href="" class="bg-gray-400 hover:bg-gray-500 p-1 rounded">#{{ $tag }}</a>
+                <a href="" class="bg-gray-300 hover:bg-gray-200 p-1 rounded">#{{ $tag->title }}</a>
             @endforeach
         @endif
     </p>

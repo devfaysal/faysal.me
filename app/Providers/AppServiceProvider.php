@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
 use Statamic\Entries\Entry;
 use Statamic\Facades\Markdown;
 use Statamic\StaticSite\SSG;
-use Torchlight\Commonmark\V1\TorchlightExtension;
+use Torchlight\Commonmark\V2\TorchlightExtension;
 
 class AppServiceProvider extends ServiceProvider
 {

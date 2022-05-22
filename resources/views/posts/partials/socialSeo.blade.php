@@ -1,7 +1,7 @@
 <meta name="description" content="{{$post->excerpt}}">
 @if($post->tags && count($post->tags) > 0)
     @foreach ($post->tags as $tag)
-        <meta property="article:tag" content="{{ $tag }}"/>
+        <meta property="article:tag" content="{{ $tag->title }}"/>
     @endforeach
 @endif
 <meta property="article:published_time" content="{{ $post->date()->toIso8601String() }}"/>

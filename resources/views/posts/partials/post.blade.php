@@ -17,7 +17,7 @@
             </div>
         @endif
         <div class="content text-lg text-gray-800 leading-relaxed">
-            {!! Statamic\Modifiers\Modify::value($post->content)->markdown()  !!}
+            {!! Statamic::modify($post->content)->markdown() !!}
         </div>
     @endisset
 </article>
