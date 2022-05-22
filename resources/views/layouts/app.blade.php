@@ -85,10 +85,11 @@
         <main>
             @yield('content')
         </main>
-        <footer class="flex justify-between pt-4 pb-8">
+        <footer class="pt-4 pb-8">
             {{-- <a href="/privacy-policy" class="text-sm text-gray-500 no-underline hover:underline">Privacy Policy</a> --}}
-            <span class="text-sm text-gray-500">© {{date('Y')}} Faysal Ahamed</span>
-            <span class="text-sm text-gray-500">Code highlighting provided by <a target="_blank" href="https://torchlight.dev/">Torchlight</a></span>
+            <span class="text-sm text-gray-500 block">© {{date('Y')}} Faysal Ahamed</span>
+            <span class="text-xs text-gray-500 block">Hosted in <a href="https://www.netlify.com/">Netlify</a></span>
+            <span class="text-xs text-gray-500 block">Code highlighting provided by <a target="_blank" href="https://torchlight.dev/">Torchlight</a></span>
         </footer>
     </div>
     <script src="{{ mix('js/app.js') }}" defer></script>
