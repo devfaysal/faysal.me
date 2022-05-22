@@ -14,7 +14,8 @@
         "laravel/framework": "^8.0",
         "statamic/cms": "^3.1",
         "statamic/ssg": "^0.9.0",
-        "stil/gd-text": "^1.1"
+        "stil/gd-text": "^1.1",
+        "torchlight/torchlight-commonmark": "^0.5.5"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

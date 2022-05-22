@@ -40,7 +40,7 @@
     </script>
     
 </head>
-<body class="bg-gray-200 leading-tight">
+<body class="bg-slate-100 leading-tight">
     <div class="max-w-2xl mx-auto px-6">
         <header class="flex justify-center py-6">
             <div class="sm:flex sm:items-center">
@@ -88,6 +88,7 @@
         <footer class="flex justify-between pt-4 pb-8">
             {{-- <a href="/privacy-policy" class="text-sm text-gray-500 no-underline hover:underline">Privacy Policy</a> --}}
             <span class="text-sm text-gray-500">© {{date('Y')}} Faysal Ahamed</span>
+            <span class="text-sm text-gray-500">Code highlighting provided by <a target="_blank" href="https://torchlight.dev/">Torchlight</a></span>
         </footer>
     </div>
     <script src="{{ mix('js/app.js') }}" defer></script>

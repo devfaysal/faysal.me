@@ -8,7 +8,9 @@ use App\Observers\PostObserver;
 use App\Post;
 use Illuminate\Support\ServiceProvider;
 use Statamic\Entries\Entry;
+use Statamic\Facades\Markdown;
 use Statamic\StaticSite\SSG;
+use Torchlight\Commonmark\V1\TorchlightExtension;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,6 +31,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Markdown::addExtension(function () {
+            return new TorchlightExtension;
+        });
         SSG::addUrls(function () {
             return $this->dynamicUrls();
         });

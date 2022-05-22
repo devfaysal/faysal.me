@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.content h2 {
+    @apply text-2xl font-bold leading-none mt-12 py-6;
+}
+
+.content h3 {
+    @apply text-xl font-semibold leading-none py-6;
+}
+
+.content h4 {
+    @apply font-bold uppercase tracking-widest leading-none py-6;
+}
+
+.content p {
+    @apply mb-6 text-lg;
+}
+
+.content blockquote {
+    @apply text-center font-black italic px-4 mb-12 pt-6 text-3xl leading-tight;
+}
+
+.content blockquote.content p {
+    @apply text-3xl leading-tight;
+}
+
+.content img {
+    @apply my-12;
+}
+
+.content a {
+    @apply text-blue-700 font-medium underline;
+}
+
+.content a:hover {
+    @apply text-black;
+}
+
+ul:not(.list-none) {
+    @apply pl-0 list-disc ml-10 mb-6 text-lg;
+}
+
+ul:not(.list-none) li {
+    @apply mb-1;
+}
+
+ol {
+    @apply pl-0 list-decimal ml-10 mb-6 text-lg;
+}
+
+ol>li {
+    @apply mb-1;
+}
+
+/*
+* https: //torchlight.dev/docs/css
+*/
+pre {
+    @apply my-4 rounded overflow-x-auto;
+}
+
+pre code.torchlight {
+    @apply block py-4 min-w-max;
+}
+
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply mr-4;
+}
