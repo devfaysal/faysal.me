@@ -7,7 +7,7 @@
         </div>
         <p class="mt-3"><a class="underline text-blue-600" href="{{ route('posts.show', $post->slug()) }}">Read more</a></p>
     @else 
-        @if(Storage::disk('public')->exists($post->image))
+        @if($post->image && Storage::disk('public')->exists($post->image))
             <div class="mb-2">
                 <img src="{{asset('storage/' . $post->image)}}" alt="{{$post->title}}">
                 @isset($post->image_credit)

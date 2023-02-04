@@ -9,30 +9,6 @@
 	 */
 
 /*!
-    * tiptap v1.27.0
-    * (c) 2020 Scrumpy UG (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-commands v1.13.0
-    * (c) 2020 Scrumpy UG (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-extensions v1.29.0
-    * (c) 2020 Scrumpy UG (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-utils v1.9.0
-    * (c) 2020 Scrumpy UG (limited liability)
-    * @license MIT
-    */
-
-/*!
    * drag-event-service v0.0.6
    * (c) 2018-present phphe <phphe@outlook.com> (https://github.com/phphe)
    * Released under the MIT License.
