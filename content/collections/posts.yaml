@@ -1,12 +1,17 @@
 title: Posts
-template: default
+template: posts/show
 layout: layout
 taxonomies:
   - tags
 revisions: false
+route: '/posts/{slug}'
 date: true
 sort_dir: desc
 default_status: draft
 date_behavior:
   past: public
   future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

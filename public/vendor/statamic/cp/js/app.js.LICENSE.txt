@@ -100,6 +100,8 @@
 
 /*! Pickr 1.7.4 MIT | https://github.com/Simonwep/pickr */
 
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
 /**
  *  PDFObject v2.2.7
  *  https://github.com/pipwerks/PDFObject

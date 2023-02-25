@@ -59,10 +59,7 @@ return [
     */
 
     'urls' => [
-        '/',
-        '/resume',
-        '/about',
-        '/blog'
+        '/resume'
     ],
 
     /*
