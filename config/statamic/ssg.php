@@ -24,7 +24,7 @@ return [
     |
     */
 
-    'destination' => storage_path('app/static'),
+    'destination' => '/var/www/html/laravel/faysal',
 
     /*
     |--------------------------------------------------------------------------
