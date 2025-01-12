@@ -44,7 +44,7 @@
                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path fill="currentColor" d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    <span class="inline-block pl-2"><a href="tel:+8801717718110">+8801717718110</a></span>
+                    <span class="inline-block pl-2"><a href="tel:+8801670347708">+8801670347708</a></span>
                 </p>
                 <p class="flex text-gray-600">
                     <svg class="w-4" aria-hidden="true" alt="E-mail" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -95,12 +95,19 @@
                 <p class="text-xl text-right text-gray-600 font-bold">Experience</p>
             </div>
             <div class="w-3/4 mt-1">
+                <p class="text-gray-600 font-bold">Freelancer at <a href="https://www.upwork.com/freelancers/~017a0951fd45f6ea14">Upwork</a></p>
+                <p class="text-sm text-gray-600">May 2016 - October 2017</p>
+                <span class="block py-1"></span>
                 <p class="text-gray-600 font-bold">Web Developer at <a href="https://webpers.com/">Webpers</a></p>
                 <p class="text-sm text-gray-600">May 2016 - October 2017</p>
                 <span class="block py-1"></span>
                 <p class="text-gray-600 font-bold">Web Developer at <a href="http://surovigroup.com/">Surovi Group</a></p>
                 <p class="text-gray-600">Developing HRM and CRM software with Laravel</p>
                 <p class="text-sm text-gray-600">October 2017 - Present</p>
+                <span class="block py-1"></span>
+                <p class="text-gray-600 font-bold">Senior Full-stack Web Developer at <a href="https://expertgate.org/">ExpertGate</a></p>
+                <p class="text-gray-600">Developing platform for exerts to collaborate with clients worldwide with Laravel and Livewire</p>
+                <p class="text-sm text-gray-600">November 2023 - Present</p>
             </div>
         </div>
         <div class="flex mb-6">
@@ -108,7 +115,7 @@
                 <p class="text-xl text-right text-gray-600 font-bold">Skills</p>
             </div>
             <div class="w-3/4 mt-1">
-                <p class="text-gray-600"><span class="font-bold">PHP/Laravel Framework:</span> Livewire, Statamic, Multi tenant saas app, Modular app</p>
+                <p class="text-gray-600"><span class="font-bold">PHP/Laravel Framework:</span> Livewire, Statamic, Multi tenant saas app, Modular app, Marketplace app</p>
                 <span class="block py-1"></span>
                 <p class="text-gray-600"><span class="font-bold">PHP/WordPress CMS:</span> WooCommerce, Advanced Custom Field, Divi, Elementor, Any page builder, Custom theme/plugin development</p>
                 <span class="block py-1"></span>
@@ -117,8 +124,8 @@
                 <p class="text-gray-600 font-bold">Javascript</p>
                 <p class="text-gray-600 font-medium">jQuery, Vue.js, Alpine.js</p>
                 <span class="block py-1"></span>
-                <p class="text-gray-600 font-bold">Css</p>
-                <p class="text-gray-600 font-medium">Tailwind Css, Bootstrap</p>
+                <p class="text-gray-600 font-bold">CSS</p>
+                <p class="text-gray-600 font-medium">Tailwind CSS, Bootstrap</p>
                 <span class="block py-1"></span>
                 <p class="text-gray-600 font-bold">Server</p>
                 <p class="text-gray-600 font-medium">Ubuntu/Debian server setup with Apache/nginx and deploy application using git</p>
