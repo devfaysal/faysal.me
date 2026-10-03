@@ -427,9 +427,15 @@ export function renderPage(url, options = {}) {
       <!-- Hero Section -->
       <section class="mb-14 sm:mb-16">
         <div class="space-y-4 pb-10 border-b border-zinc-200/80 dark:border-zinc-800/80">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Available for projects & consulting
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Available for projects & consulting
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              AI-Augmented Development
+            </div>
           </div>
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">
             ${site.heroTitle}
