@@ -230,15 +230,27 @@ ${assetTags}
       <div class="flex items-center justify-between h-16">
         
         <!-- Left Brand / Logo -->
-        <a href="/" class="flex items-center gap-2.5 group">
-          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" title="Available for projects"></span>
-          <span class="font-bold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">
-            ${site.name}
-          </span>
-          <span class="text-zinc-300 dark:text-zinc-700 hidden sm:inline select-none">/</span>
-          <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono hidden sm:inline">
-            ${site.tagline}
-          </span>
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="relative shrink-0">
+            <img 
+              src="${site.author.avatar}" 
+              alt="${site.name}" 
+              fetchpriority="high"
+              decoding="async"
+              width="44"
+              height="44"
+              class="w-11 h-11 rounded-full object-cover ring-2 ring-emerald-500/25 group-hover:ring-emerald-500/60 transition-all shadow-xs"
+            >
+            <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white dark:border-[#0c0d0e] rounded-full" title="Available for projects"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">
+              ${site.name}
+            </span>
+            <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono hidden sm:inline-block">
+              ${site.tagline}
+            </span>
+          </div>
         </a>
 
         <!-- Desktop Navigation & Theme Toggler -->
@@ -414,51 +426,41 @@ export function renderPage(url, options = {}) {
     const content = `
       <!-- Hero Section -->
       <section class="mb-14 sm:mb-16">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 pb-10 border-b border-zinc-200/80 dark:border-zinc-800/80">
-          <img 
-            src="${site.author.avatar}" 
-            alt="${site.name}" 
-            width="120"
-            height="120"
-            class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover ring-4 ring-emerald-500/10 shadow-md"
-          >
-          <div class="flex-1 space-y-3">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Available for projects & consulting
-            </div>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">
-              ${site.heroTitle}
-            </h1>
-            <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
-              ${site.heroSubtitle}
-            </p>
-            
-            <!-- Quick Actions & Social Links -->
-            <div class="flex flex-wrap items-center gap-3 pt-3">
-              <a href="/resume/" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm hover:shadow-md transition-all">
-                View Resume
-                ${icons.arrowRight}
+        <div class="space-y-4 pb-10 border-b border-zinc-200/80 dark:border-zinc-800/80">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Available for projects & consulting
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">
+            ${site.heroTitle}
+          </h1>
+          <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
+            ${site.heroSubtitle}
+          </p>
+          
+          <!-- Quick Actions & Social Links -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="/resume/" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm hover:shadow-md transition-all">
+              View Resume
+              ${icons.arrowRight}
+            </a>
+
+            <div class="h-6 w-px bg-zinc-200 dark:bg-zinc-800 hidden sm:block mx-1"></div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="GitHub">
+                <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.github}</span>
+                <span>GitHub</span>
               </a>
-
-              <div class="h-6 w-px bg-zinc-200 dark:bg-zinc-800 hidden sm:block mx-1"></div>
-
-              <div class="flex flex-wrap items-center gap-2">
-                <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="GitHub">
-                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.github}</span>
-                  <span>GitHub</span>
-                </a>
-                <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="X / Twitter">
-                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.twitter}</span>
-                  <span>Twitter</span>
-                </a>
-                <a href="${site.social.facebook}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="Facebook">
-                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.facebook}</span>
-                  <span>Facebook</span>
-                </a>
-              </div>
+              <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="X / Twitter">
+                <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.twitter}</span>
+                <span>Twitter</span>
+              </a>
+              <a href="${site.social.facebook}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="Facebook">
+                <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.facebook}</span>
+                <span>Facebook</span>
+              </a>
             </div>
-
           </div>
         </div>
       </section>
