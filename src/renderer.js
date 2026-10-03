@@ -223,27 +223,15 @@ ${assetTags}
       <div class="flex items-center justify-between h-16">
         
         <!-- Left Brand / Logo -->
-        <a href="/" class="flex items-center gap-3 group">
-          <div class="relative">
-            <img 
-              src="${site.author.avatar}" 
-              alt="${site.name}" 
-              fetchpriority="high"
-              decoding="async"
-              width="36"
-              height="36"
-              class="w-9 h-9 rounded-full object-cover ring-2 ring-emerald-500/20 group-hover:ring-emerald-500/60 transition-all"
-            >
-            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white dark:border-zinc-900 rounded-full" title="Available for projects"></span>
-          </div>
-          <div class="flex flex-col">
-            <span class="font-bold text-base text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">
-              ${site.name}
-            </span>
-            <span class="text-xs text-zinc-600 dark:text-zinc-400 font-mono hidden sm:inline-block">
-              ${site.tagline}
-            </span>
-          </div>
+        <a href="/" class="flex items-center gap-2.5 group">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" title="Available for projects"></span>
+          <span class="font-bold text-base sm:text-lg text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">
+            ${site.name}
+          </span>
+          <span class="text-zinc-300 dark:text-zinc-700 hidden sm:inline select-none">/</span>
+          <span class="text-xs text-zinc-500 dark:text-zinc-400 font-mono hidden sm:inline">
+            ${site.tagline}
+          </span>
         </a>
 
         <!-- Desktop Navigation & Theme Toggler -->
@@ -464,28 +452,32 @@ export function renderPage(url, options = {}) {
 
       <!-- Latest Articles Section -->
       <section>
-        <div class="flex items-center justify-between mb-8">
-          <div>
-            <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">Latest Articles</h2>
-            <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-0.5">Writings on Laravel, web architecture, and developer tips.</p>
-          </div>
-          <a href="/blog/" class="hidden sm:inline-flex items-center gap-1 text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500">
-            View all
-            ${icons.arrowRight}
-          </a>
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">Latest Articles</h2>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Writings on Laravel, web architecture, and developer tips.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-6">
           ${homePosts.map(renderPostCard).join('\n')}
         </div>
 
-        ${posts.length > 10 ? `
-        <div class="flex justify-between items-center pt-8 mt-8 border-t border-zinc-200/80 dark:border-zinc-800/80">
-          <a href="/page/2/" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/60 transition-colors">
-            « Older Entries
-          </a>
-          <div></div>
-        </div>` : ''}
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-10 mt-10 border-t border-zinc-200/80 dark:border-zinc-800/80">
+          <span class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-mono">
+            Showing latest 10 of ${posts.length} articles
+          </span>
+          <div class="flex items-center gap-3">
+            ${posts.length > 10 ? `
+              <a href="/page/2/" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200/80 dark:border-zinc-800 transition-colors">
+                Page 2
+                ${icons.arrowRight}
+              </a>
+            ` : ''}
+            <a href="/blog/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-colors group">
+              <span>View All Articles</span>
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
       </section>
     `;
     return renderLayout({ site, title: '', description: site.heroSubtitle, url: '/', activeNav: 'Home', content, ...options });
