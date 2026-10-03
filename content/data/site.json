@@ -1,0 +1,38 @@
+{
+  "title": "Faysal Ahamed | Full-stack Web Developer",
+  "name": "Faysal Ahamed",
+  "tagline": "Full-stack Web Developer",
+  "heroTitle": "Hi, I\u2019m Faysal",
+  "heroSubtitle": "I\u2019m a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress.",
+  "url": "https://faysal.me",
+  "author": {
+    "name": "Faysal Ahamed",
+    "username": "devfaysal",
+    "email": "devfaysal@gmail.com",
+    "phone": "+8801670347708",
+    "avatar": "/assets/images/avatar.jpg"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/devfaysal",
+    "twitter": "https://x.com/devfaysal",
+    "github": "https://github.com/devfaysal"
+  },
+  "nav": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "name": "Resume",
+      "url": "/resume/"
+    }
+  ]
+}

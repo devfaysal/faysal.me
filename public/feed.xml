@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faysal Ahamed | Full-stack Web Developer</title>
+    <link>https://faysal.me</link>
+    <description>I’m a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue and WordPress.</description>
+    <language>en-US</language>
+    <atom:link href="https://faysal.me/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title><![CDATA[Add Readme in your GitHub profile]]></title>
+      <link>https://faysal.me/add-readme-in-your-github-profile/</link>
+      <guid>https://faysal.me/add-readme-in-your-github-profile/</guid>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 GMT</pubDate>
+      <description><![CDATA[GitHub users can now add a readme file in their profile.Here is how to do it:]]></description>
+    </item>
+    <item>
+      <title><![CDATA[It Doesn't Have to Be Crazy at Work]]></title>
+      <link>https://faysal.me/it-doesnt-have-to-be-crazy-at-work/</link>
+      <guid>https://faysal.me/it-doesnt-have-to-be-crazy-at-work/</guid>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate>
+      <description><![CDATA[&#8220;It Doesn&#8217;t Have to Be Crazy at Work&#8221;টাইটেল টা @jasonfried এবং @dhh এর লেখা একটা বইয়ের টাইটেল। এই ২ ভদ্রলোক বেসক্যাম্প নামের একটা কোম্পানির প্রতিষ্ঠাতা।যাইহোক, আমার লেখার বিষয় এই বই কেন্দ্রিক না হলেও এর মূল থিমের সাথে অনেকটাই মিল আছে। আমরা আসলে কেন কাজ ( ব্যাবসা/চাকরি ইত্যাদি ) করি? টাকা পয়সা কেন উপার্জন করি?পৃথিবীতে আমরা [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Code statistics of Laravel Application]]></title>
+      <link>https://faysal.me/code-statistics-of-laravel-application/</link>
+      <guid>https://faysal.me/code-statistics-of-laravel-application/</guid>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate>
+      <description><![CDATA[Recently I have seen a tweet of @dhh, creator of Ruby on Rails that showing code statistics of one of his recent project. I was wondering if Laravel has anything like that. I tweeted mentioning several Laravel devs and found a nice package which did similar stats that I have seen from DHH.Install the package: [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[If you are a PHP developer and working mostly with Laravel ecosystem, you must follow these guys on twitter:]]></title>
+      <link>https://faysal.me/if-you-are-a-php-developer-and-working-mostly-with-laravel-ecosystem-you-must-follow-these-guys-on-twitter/</link>
+      <guid>https://faysal.me/if-you-are-a-php-developer-and-working-mostly-with-laravel-ecosystem-you-must-follow-these-guys-on-twitter/</guid>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate>
+      <description><![CDATA[If you are a PHP developer and working mostly with Laravel ecosystem, you must follow these guys on twitter: Here are some twitter handles to follow for Laravel related news, tips &amp; tricks]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Why spending time on writing tests for software?]]></title>
+      <link>https://faysal.me/why-spending-time-on-writing-tests-for-software/</link>
+      <guid>https://faysal.me/why-spending-time-on-writing-tests-for-software/</guid>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[I have been developing web-based software using PHP for more than 5 years. I never wrote any test or did not know how to write before I started writing tests for my Laravel applications from early 2019.I become familiar with the term TDD (Test Driven Development) when I started learning Ruby On Rails before my [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Division, District and Upazila data of Bangladesh for Laravel application]]></title>
+      <link>https://faysal.me/division-district-and-upazila-data-of-bangladesh-for-laravel-application/</link>
+      <guid>https://faysal.me/division-district-and-upazila-data-of-bangladesh-for-laravel-application/</guid>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[I was developing a Laravel app that required the Division, District and Upazila data.Before this, several times I manually created database table and imported sql data from https://github.com/nuhil/bangladesh-geocode So no more manual works again. I created a package for Laravel application so that I can just user few command to get all desired data.Install using [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Access website without active domain name]]></title>
+      <link>https://faysal.me/access-website-without-active-domain-name/</link>
+      <guid>https://faysal.me/access-website-without-active-domain-name/</guid>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[Sometimes you host a website but you do not have an active domain or maybe your DNS is not updated yet but you want to visit the site- You can do it very easily by updating your host file. Let say the domain name is example.com and we host this website in a shared hosting [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Fix: phpMyadmin No activity within 1440 seconds; please log in again]]></title>
+      <link>https://faysal.me/fix-phpmyadmin-no-activity-within-1440-seconds-please-log-in-again/</link>
+      <guid>https://faysal.me/fix-phpmyadmin-no-activity-within-1440-seconds-please-log-in-again/</guid>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[Lots of developers use phpMyadmin for browsing mysql database in their development setup. By default phpMyadmin expires session if there is no activity within 1440 seconds. But in development setup, log in again and again is painful. It can be solved by updating &#8220;Login cookie validity&#8221; First login to phpMyadmin then follow the steps below: [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Important Facebook Groups for Developers]]></title>
+      <link>https://faysal.me/important-facebook-groups-for-developers/</link>
+      <guid>https://faysal.me/important-facebook-groups-for-developers/</guid>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[Language Based Framework Based]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Migrate to Shopify – Keeping URL structure and SEO unaffected]]></title>
+      <link>https://faysal.me/migrate-to-shopify-keeping-url-structure-and-seo-unaffected/</link>
+      <guid>https://faysal.me/migrate-to-shopify-keeping-url-structure-and-seo-unaffected/</guid>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[History Last year I developed an ecommerce website for a client using WordPress. Interesting fact is, we did not use WooCommerce. The backend of ecommerce was at shopify. My client subscribed to the shopify&#8217;s lite version to manage product, payment, invoice etc. So there was no online store interface. So we decided to build the [...]]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Starting My Blog]]></title>
+      <link>https://faysal.me/starting-my-blog/</link>
+      <guid>https://faysal.me/starting-my-blog/</guid>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 GMT</pubDate>
+      <description><![CDATA[Hello World, I&#8217;m a full-stack web developer who loves working with PHP, JavaScript, Laravel, Vue, and WordPress. I registered this domain faysal.me back in 2015 and hosted a WordPress based site in a shared hosting. It was just a resume site with a contact form. Before Facebook era, I used to write in a local [...]]]></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,110 @@
+{
+  "name": "Faysal Ahamed",
+  "avatar": "/assets/images/avatar.jpg",
+  "contact": [
+    {
+      "type": "location",
+      "label": "Village: Noagao Nilokhi, Union: Pirijpur, Bajitpur, Kishoreganj",
+      "link": null,
+      "icon": "location"
+    },
+    {
+      "type": "phone",
+      "label": "+8801670347708",
+      "link": "tel:+8801670347708",
+      "icon": "phone"
+    },
+    {
+      "type": "email",
+      "label": "devfaysal@gmail.com",
+      "link": "mailto:devfaysal@gmail.com",
+      "icon": "email"
+    },
+    {
+      "type": "github",
+      "label": "devfaysal",
+      "link": "https://github.com/devfaysal/",
+      "icon": "github"
+    },
+    {
+      "type": "twitter",
+      "label": "devfaysal",
+      "link": "https://x.com/devfaysal",
+      "icon": "twitter"
+    },
+    {
+      "type": "website",
+      "label": "faysal.me",
+      "link": "https://faysal.me",
+      "icon": "globe"
+    }
+  ],
+  "about": "I'm a full-stack web developer who loves working with PHP, Laravel, Livewire and WordPress. I am an early adopter of new versions of software/language/framework.",
+  "devSetup": {
+    "os": "Ubuntu 22.04",
+    "ide": "VS Code, PhpStorm",
+    "browser": "Firefox"
+  },
+  "experience": [
+    {
+      "title": "Senior Full-stack Web Developer at ExpertGate",
+      "period": "November 2023 - Present",
+      "description": "Developing a platform for experts to collaborate with clients worldwide using Laravel and Livewire."
+    },
+    {
+      "title": "Web Developer at Surovi Group",
+      "period": "October 2017 - Present",
+      "description": "Developing HRM and CRM software with Laravel"
+    },
+    {
+      "title": "Web Developer at Webpers",
+      "period": "May 2016 - October 2017",
+      "description": ""
+    },
+    {
+      "title": "Freelancer at Upwork",
+      "period": "May 2012 - Present",
+      "description": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master\u2019s - 2014",
+      "institution": "State University of Bangladesh"
+    },
+    {
+      "degree": "Bachelor of Pharmacy - 2013",
+      "institution": "Manarat International University"
+    },
+    {
+      "degree": "Higher Secondary School Certificate - 2007",
+      "institution": "BSF Shaheen College, Kurmitola"
+    },
+    {
+      "degree": "Secondary School Certificate - 2005",
+      "institution": "Aftab Uddin School and College"
+    }
+  ],
+  "skills": [
+    {
+      "category": "PHP/Laravel Framework",
+      "items": "Livewire, Statamic, Multi-tenant saas app, Modular apps, Marketplace apps"
+    },
+    {
+      "category": "PHP/WordPress CMS",
+      "items": "WooCommerce, Advanced Custom Fields, Divi, Elementor, Any page builder, Custom theme/plugin development"
+    },
+    {
+      "category": "Javascript",
+      "items": "jQuery, Vue.js, Alpine.js"
+    },
+    {
+      "category": "CSS",
+      "items": "Tailwind CSS, Bootstrap"
+    },
+    {
+      "category": "DevOps",
+      "items": "Ubuntu/Debian server setup with Apache/nginx and deploy applications using Git"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "General",
+    "slug": "general",
+    "count": 1,
+    "url": "/category/general/"
+  },
+  {
+    "id": 4,
+    "name": "Lifestyle",
+    "slug": "lifestyle",
+    "count": 2,
+    "url": "/category/lifestyle/"
+  },
+  {
+    "id": 3,
+    "name": "Programming",
+    "slug": "programming",
+    "count": 5,
+    "url": "/category/programming/"
+  },
+  {
+    "id": 5,
+    "name": "Web Development",
+    "slug": "web-development",
+    "count": 4,
+    "url": "/category/web-development/"
+  }
+]

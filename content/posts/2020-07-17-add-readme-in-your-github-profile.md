@@ -1,0 +1,20 @@
+---
+title: "Add Readme in your GitHub profile"
+date: "2020-07-17"
+slug: "add-readme-in-your-github-profile"
+categories: ["Programming"]
+excerpt: "GitHub users can now add a readme file in their profile.Here is how to do it:"
+draft: false
+---
+
+GitHub users can now add a readme file in their profile.  
+Here is how to do it:
+
+*   Log in to your GitHub account
+*   Go to [Create a new repository](https://github.com/new) page
+*   Write the **Repository name** exactly the same to your GitHub username. In my case my username devfaysal. So the repository was devfaysal/devfaysal. When you finish typing the repository name, it will appear a message like this-
+*   Keep the repository Public
+*   Check the Initialize this repository with a README
+*   You are done. Now write whatever you like in that readme file
+*   Then go to your profile to see how it looks like.
+*   Do not forget to share it with your friends.
