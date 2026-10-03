@@ -1,12 +1,13 @@
 {
   "name": "Faysal Ahamed",
+  "title": "Senior Full-stack Web Developer",
   "avatar": "/assets/images/avatar.jpg",
   "contact": [
     {
-      "type": "location",
-      "label": "Village: Noagao Nilokhi, Union: Pirijpur, Bajitpur, Kishoreganj",
-      "link": null,
-      "icon": "location"
+      "type": "email",
+      "label": "devfaysal@gmail.com",
+      "link": "mailto:devfaysal@gmail.com",
+      "icon": "email"
     },
     {
       "type": "phone",
@@ -15,96 +16,116 @@
       "icon": "phone"
     },
     {
-      "type": "email",
-      "label": "devfaysal@gmail.com",
-      "link": "mailto:devfaysal@gmail.com",
-      "icon": "email"
+      "type": "website",
+      "label": "faysal.me",
+      "link": "https://faysal.me",
+      "icon": "globe"
     },
     {
       "type": "github",
-      "label": "devfaysal",
+      "label": "github.com/devfaysal",
       "link": "https://github.com/devfaysal/",
       "icon": "github"
     },
     {
       "type": "twitter",
-      "label": "devfaysal",
+      "label": "x.com/devfaysal",
       "link": "https://x.com/devfaysal",
       "icon": "twitter"
     },
     {
-      "type": "website",
-      "label": "faysal.me",
-      "link": "https://faysal.me",
-      "icon": "globe"
+      "type": "location",
+      "label": "Pirijpur, Bajitpur, Kishoreganj",
+      "link": null,
+      "icon": "location"
     }
   ],
-  "about": "I'm a full-stack web developer who loves working with PHP, Laravel, Livewire and WordPress. I am an early adopter of new versions of software/language/framework.",
+  "about": "Full-stack web developer with 12+ years of experience building web applications, SaaS platforms, and business software with PHP, Laravel, Livewire, and modern JavaScript. I use AI coding agents in my daily workflow to ship faster while keeping code clean, tested, and maintainable.",
   "devSetup": {
-    "os": "Ubuntu 22.04",
-    "ide": "VS Code, PhpStorm",
-    "browser": "Firefox"
+    "os": "Ubuntu 26.04",
+    "ide": "VS Code, Anti Gravity",
+    "aiAgent": "Antigravity, Codex"
   },
   "experience": [
     {
-      "title": "Senior Full-stack Web Developer at ExpertGate",
-      "period": "November 2023 - Present",
-      "description": "Developing a platform for experts to collaborate with clients worldwide using Laravel and Livewire."
+      "role": "Senior Full-stack Web Developer",
+      "company": "ExpertGate",
+      "period": "Nov 2023 – Present",
+      "highlights": [
+        "Architecting and developing client collaboration platforms using Laravel and Livewire.",
+        "Engineered key client platforms including AICRO (<a href=\"https://aicro.au/\" target=\"_blank\" rel=\"noopener\" class=\"cv-link\">aicro.au</a>) and AIGRS (<a href=\"https://aigrs.au/\" target=\"_blank\" rel=\"noopener\" class=\"cv-link\">aigrs.au</a>) with secure role-based portals and workflows.",
+        "Integrated modern AI coding agents into development cycles to accelerate feature delivery."
+      ]
     },
     {
-      "title": "Web Developer at Surovi Group",
-      "period": "October 2017 - Present",
-      "description": "Developing HRM and CRM software with Laravel"
+      "role": "Web Developer",
+      "company": "Surovi Group",
+      "period": "Oct 2017 – Present",
+      "highlights": [
+        "Designed and maintained core business software suites including custom HRM, CRM, and Call Center management systems using Laravel.",
+        "Developed and launched company e-commerce platform, integrating payment gateways, product catalogs, and order dispatch pipelines.",
+        "Streamlined internal operations across attendance tracking, employee payroll, and customer relationship records."
+      ]
     },
     {
-      "title": "Web Developer at Webpers",
-      "period": "May 2016 - October 2017",
-      "description": ""
+      "role": "Web Developer",
+      "company": "Webpers",
+      "period": "May 2016 – Oct 2017",
+      "highlights": [
+        "Developed custom web applications, responsive client portals, and bespoke WordPress solutions."
+      ]
     },
     {
-      "title": "Freelancer at Upwork",
-      "period": "May 2012 - Present",
-      "description": ""
+      "role": "Freelancer",
+      "company": "Upwork",
+      "period": "May 2012 – Present",
+      "highlights": [
+        "Delivered full-stack web solutions, custom PHP/Laravel web apps, and CMS integrations for international clients."
+      ]
     }
   ],
   "education": [
     {
-      "degree": "Master\u2019s - 2014",
-      "institution": "State University of Bangladesh"
+      "degree": "Master's",
+      "institution": "State University of Bangladesh",
+      "year": "2014"
     },
     {
-      "degree": "Bachelor of Pharmacy - 2013",
-      "institution": "Manarat International University"
+      "degree": "Bachelor of Pharmacy",
+      "institution": "Manarat International University",
+      "year": "2013"
     },
     {
-      "degree": "Higher Secondary School Certificate - 2007",
-      "institution": "BSF Shaheen College, Kurmitola"
+      "degree": "HSC",
+      "institution": "BSF Shaheen College, Kurmitola",
+      "year": "2007"
     },
     {
-      "degree": "Secondary School Certificate - 2005",
-      "institution": "Aftab Uddin School and College"
+      "degree": "SSC",
+      "institution": "Aftab Uddin School and College",
+      "year": "2005"
     }
   ],
   "skills": [
     {
-      "category": "PHP/Laravel Framework",
-      "items": "Livewire, Statamic, Multi-tenant saas app, Modular apps, Marketplace apps"
+      "category": "Backend",
+      "items": ["PHP", "Laravel", "Livewire", "Statamic", "REST APIs", "MySQL", "Multi-tenant SaaS"]
     },
     {
-      "category": "PHP/WordPress CMS",
-      "items": "WooCommerce, Advanced Custom Fields, Divi, Elementor, Any page builder, Custom theme/plugin development"
+      "category": "Frontend",
+      "items": ["JavaScript", "Alpine.js", "Vue.js", "Tailwind CSS", "Vite"]
     },
     {
-      "category": "Javascript",
-      "items": "jQuery, Vue.js, Alpine.js"
-    },
-    {
-      "category": "CSS",
-      "items": "Tailwind CSS, Bootstrap"
+      "category": "AI Workflow",
+      "items": ["Antigravity", "Codex", "AI-assisted development", "Prompt engineering"]
     },
     {
       "category": "DevOps",
-      "items": "Ubuntu/Debian server setup with Apache/nginx and deploy applications using Git"
+      "items": ["Linux", "Nginx", "Apache", "Git", "Cloudflare Pages", "CI/CD"]
+    },
+    {
+      "category": "WordPress",
+      "items": ["Custom themes", "Custom plugins", "WooCommerce", "ACF"]
     }
   ]
 }

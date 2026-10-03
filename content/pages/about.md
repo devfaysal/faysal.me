@@ -1,8 +1,8 @@
 ---
 title: "About me"
-description: "Hi, I'm Faysal. I'm a full-stack web developer from Dhaka, Bangladesh."
+description: "Hi, I'm Faysal. I'm a full-stack web developer leveraging AI agents for faster, high-quality development."
 ---
 
-Hi, I'm Faysal. I'm a full-stack web developer from Dhaka, Bangladesh.
+Hi, I'm Faysal. I'm a full-stack web developer specializing in PHP, Laravel, Livewire, and modern JavaScript.
 
-I love working with PHP and JavaScript, with a particular affection for the Laravel and Vue frameworks respectively. I often use WordPress CMS for general purpose websites.
+As an early adopter of modern developer tooling, I actively integrate AI agents into my engineering workflow to accelerate development cycles, elevate code quality, and deliver high-performance web applications faster.

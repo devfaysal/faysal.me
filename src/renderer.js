@@ -26,6 +26,13 @@ const icons = {
   arrowLeft: `<svg class="w-4 h-4 shrink-0 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>`,
 };
 
+const socialIcons = {
+  github: `<svg class="w-[18px] h-[18px] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>`,
+  twitter: `<svg class="w-[18px] h-[18px] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
+  facebook: `<svg class="w-[18px] h-[18px] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>`,
+  rss: `<svg class="w-[18px] h-[18px] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>`,
+};
+
 function formatDate(dateStr) {
   if (!dateStr) return '';
   const clean = dateStr.split('T')[0];
@@ -328,22 +335,22 @@ ${assetTags}
         </div>
 
         <!-- Social Icons -->
-        <div class="flex items-center gap-4 text-zinc-500 dark:text-zinc-400">
-          <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" aria-label="GitHub">
+        <div class="flex items-center gap-2 sm:gap-2.5 text-zinc-600 dark:text-zinc-300">
+          <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:text-emerald-600 dark:hover:text-emerald-400 border border-zinc-200/80 dark:border-zinc-700/80 shadow-2xs transition-all hover:scale-105" aria-label="GitHub" title="GitHub">
             <span class="sr-only">GitHub</span>
-            ${icons.github}
+            ${socialIcons.github}
           </a>
-          <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" aria-label="X / Twitter">
+          <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:text-emerald-600 dark:hover:text-emerald-400 border border-zinc-200/80 dark:border-zinc-700/80 shadow-2xs transition-all hover:scale-105" aria-label="Twitter" title="Twitter / X">
             <span class="sr-only">Twitter</span>
-            ${icons.twitter}
+            ${socialIcons.twitter}
           </a>
-          <a href="${site.social.facebook}" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" aria-label="Facebook">
+          <a href="${site.social.facebook}" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:text-emerald-600 dark:hover:text-emerald-400 border border-zinc-200/80 dark:border-zinc-700/80 shadow-2xs transition-all hover:scale-105" aria-label="Facebook" title="Facebook">
             <span class="sr-only">Facebook</span>
-            <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            ${socialIcons.facebook}
           </a>
-          <a href="/feed.xml" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors" aria-label="RSS Feed">
+          <a href="/feed.xml" class="p-2.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 hover:text-emerald-600 dark:hover:text-emerald-400 border border-zinc-200/80 dark:border-zinc-700/80 shadow-2xs transition-all hover:scale-105" aria-label="RSS Feed" title="RSS Feed">
             <span class="sr-only">RSS</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+            ${socialIcons.rss}
           </a>
         </div>
 
@@ -427,21 +434,27 @@ export function renderPage(url, options = {}) {
               ${site.heroSubtitle}
             </p>
             
-            <!-- Quick Actions & Links -->
-            <div class="flex flex-wrap items-center gap-3 pt-2">
-              <a href="/resume/" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-colors">
+            <!-- Quick Actions & Social Links -->
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="/resume/" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm hover:shadow-md transition-all">
                 View Resume
                 ${icons.arrowRight}
               </a>
-              <a href="/about/" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 transition-colors">
-                About Me
-              </a>
-              <div class="flex items-center gap-2 ml-auto">
-                <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors" title="GitHub">
-                  ${icons.github}
+
+              <div class="h-6 w-px bg-zinc-200 dark:bg-zinc-800 hidden sm:block mx-1"></div>
+
+              <div class="flex flex-wrap items-center gap-2">
+                <a href="${site.social.github}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="GitHub">
+                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.github}</span>
+                  <span>GitHub</span>
                 </a>
-                <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors" title="Twitter / X">
-                  ${icons.twitter}
+                <a href="${site.social.twitter}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="X / Twitter">
+                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.twitter}</span>
+                  <span>Twitter</span>
+                </a>
+                <a href="${site.social.facebook}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-medium bg-white dark:bg-[#121316] text-zinc-700 dark:text-zinc-200 border border-zinc-200/90 dark:border-zinc-800/80 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 shadow-2xs hover:shadow-sm transition-all group" title="Facebook">
+                  <span class="text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">${socialIcons.facebook}</span>
+                  <span>Facebook</span>
                 </a>
               </div>
             </div>
@@ -533,162 +546,107 @@ export function renderPage(url, options = {}) {
     return renderLayout({ site, title: aboutMeta.title, description: aboutMeta.description, url: '/about/', activeNav: 'About', content, ...options });
   }
 
-  // 5. Resume (/resume/) with Vertical Timeline
+  // 5. Resume (/resume/) — print-friendly developer CV
   if (cleanUrl === '/resume/') {
+    const contactHtml = resume.contact.map(c => {
+      const icon = (icons[c.icon] || '').replace(/class="[^"]*"/, 'class="cv-icon"');
+      const external = c.link && c.link.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
+      const label = c.link ? `<a href="${c.link}"${external}>${c.label}</a>` : `<span>${c.label}</span>`;
+      return `<li>${icon}${label}</li>`;
+    }).join('');
+
+    const experienceHtml = resume.experience.map(exp => `
+      <li class="cv-job">
+        <div class="cv-job-head">
+          <h3 class="cv-role">${exp.role}</h3>
+          <span class="cv-period">${exp.period}</span>
+        </div>
+        <p class="cv-company">${exp.company}</p>
+        ${exp.highlights && exp.highlights.length ? `
+          <ul class="cv-points">
+            ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
+          </ul>` : ''}
+      </li>
+    `).join('');
+
+    const skillsHtml = resume.skills.map(s => {
+      const items = Array.isArray(s.items) ? s.items : String(s.items).split(',').map(i => i.trim());
+      return `
+        <div class="cv-skill-group">
+          <h3 class="cv-subheading">${s.category}</h3>
+          <ul class="cv-chips">${items.map(i => `<li>${i}</li>`).join('')}</ul>
+        </div>
+      `;
+    }).join('');
+
+    const educationHtml = resume.education.map(e => `
+      <li>
+        <div class="cv-edu-head">
+          <strong>${e.degree}</strong>
+          ${e.year ? `<span class="cv-period">${e.year}</span>` : ''}
+        </div>
+        <span class="cv-muted">${e.institution}</span>
+      </li>
+    `).join('');
+
     const content = `
-      <div class="space-y-10">
-        
-        <!-- Header Profile Card -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-            <img 
-              src="${resume.avatar}" 
-              alt="${resume.name}" 
-              width="112"
-              height="112"
-              class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover ring-4 ring-emerald-500/10 shadow-sm"
-            >
-            <div class="flex-1 text-center sm:text-left space-y-2">
-              <h1 class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-100 tracking-tight">${resume.name}</h1>
-              <p class="text-emerald-600 dark:text-emerald-400 font-medium">${site.tagline}</p>
-              
-              <!-- Contact Details Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-3 text-xs sm:text-sm">
-                ${resume.contact.map(c => {
-                  const iconSvg = icons[c.icon] || '';
-                  const linkHtml = c.link 
-                    ? `<a href="${c.link}" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors truncate" ${c.link.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${c.label}</a>` 
-                    : `<span class="truncate">${c.label}</span>`;
-                  return `
-                    <div class="flex items-center gap-2 p-2 rounded-lg bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/60 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 min-w-0" title="${c.label}">
-                      ${iconSvg}
-                      ${linkHtml}
-                    </div>
-                  `;
-                }).join('')}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- About Me Section -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-3 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            About Me
-          </h2>
-          <p class="text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            ${resume.about}
-          </p>
-        </div>
-
-        <!-- Dev Setup -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Dev Setup
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div class="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/60 dark:border-zinc-800">
-              <span class="text-xs font-mono uppercase text-zinc-600 dark:text-zinc-400 block mb-1">Operating System</span>
-              <span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">${resume.devSetup.os}</span>
-            </div>
-            <div class="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/60 dark:border-zinc-800">
-              <span class="text-xs font-mono uppercase text-zinc-600 dark:text-zinc-400 block mb-1">Editor / IDE</span>
-              <span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">${resume.devSetup.ide}</span>
-            </div>
-            <div class="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200/60 dark:border-zinc-800">
-              <span class="text-xs font-mono uppercase text-zinc-600 dark:text-zinc-400 block mb-1">Browser</span>
-              <span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">${resume.devSetup.browser}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience Timeline -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Experience
-          </h2>
-          
-          <div class="relative pl-6 sm:pl-8 border-l-2 border-emerald-500/30 dark:border-emerald-500/20 space-y-8">
-            ${resume.experience.map(exp => `
-              <div class="relative group">
-                <!-- Timeline Dot -->
-                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-emerald-500 ring-4 ring-white dark:ring-[#121316] group-hover:scale-125 transition-transform"></div>
-                
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
-                  <h3 class="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                    ${exp.title}
-                  </h3>
-                  <span class="inline-block px-2.5 py-0.5 rounded-md text-xs font-mono font-medium bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 w-fit">
-                    ${exp.period}
-                  </span>
-                </div>
-                ${exp.description ? `
-                  <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed">
-                    ${exp.description}
-                  </p>
-                ` : ''}
-              </div>
-            `).join('')}
-          </div>
-        </div>
-
-        <!-- Education Timeline -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Education
-          </h2>
-          
-          <div class="relative pl-6 sm:pl-8 border-l-2 border-emerald-500/30 dark:border-emerald-500/20 space-y-6">
-            ${resume.education.map(edu => `
-              <div class="relative group">
-                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-emerald-500 ring-4 ring-white dark:ring-[#121316] group-hover:scale-125 transition-transform"></div>
-                <h3 class="text-base font-bold text-zinc-900 dark:text-zinc-100">
-                  ${edu.degree}
-                </h3>
-                <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-0.5">
-                  ${edu.institution}
-                </p>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-
-        <!-- Skills Grid -->
-        <div class="bg-white dark:bg-[#121316] p-6 sm:p-8 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-          <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Skills & Expertise
-          </h2>
-          
-          <div class="grid grid-cols-1 gap-4">
-            ${resume.skills.map(skill => {
-              const pills = skill.items.split(',').map(s => s.trim());
-              return `
-                <div class="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-800">
-                  <h3 class="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-2.5 font-mono text-emerald-600 dark:text-emerald-400">
-                    ${skill.category}
-                  </h3>
-                  <div class="flex flex-wrap gap-1.5">
-                    ${pills.map(p => `
-                      <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 shadow-2xs">
-                        ${p}
-                      </span>
-                    `).join('')}
-                  </div>
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
-
+      <div class="cv-toolbar no-print">
+        <a href="/" class="cv-back">${icons.arrowLeft} Back to Home</a>
+        <button type="button" onclick="window.print()" class="cv-print-btn">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          Print / Save as PDF
+        </button>
       </div>
+
+      <article class="cv">
+        <div class="cv-header">
+          <img src="${resume.avatar}" alt="${resume.name}" width="88" height="88" class="cv-avatar">
+          <div class="cv-identity">
+            <h1 class="cv-name">${resume.name}</h1>
+            <p class="cv-title">${resume.title || site.tagline}</p>
+            <ul class="cv-contact">${contactHtml}</ul>
+          </div>
+        </div>
+
+        <div class="cv-body">
+          <div class="cv-main">
+            <section class="cv-section">
+              <h2 class="cv-heading">Profile</h2>
+              <p class="cv-summary">${resume.about}</p>
+            </section>
+
+            <section class="cv-section">
+              <h2 class="cv-heading">Experience</h2>
+              <ol class="cv-timeline">${experienceHtml}</ol>
+            </section>
+          </div>
+
+          <aside class="cv-side">
+            <section class="cv-section">
+              <h2 class="cv-heading">Skills</h2>
+              ${skillsHtml}
+            </section>
+
+            <section class="cv-section">
+              <h2 class="cv-heading">Dev Setup</h2>
+              <dl class="cv-setup">
+                <dt>OS</dt><dd>${resume.devSetup.os}</dd>
+                <dt>Editor</dt><dd>${resume.devSetup.ide}</dd>
+                <dt>AI Agents</dt><dd>${resume.devSetup.aiAgent}</dd>
+              </dl>
+            </section>
+
+            <section class="cv-section">
+              <h2 class="cv-heading">Education</h2>
+              <ul class="cv-education">${educationHtml}</ul>
+            </section>
+          </aside>
+        </div>
+      </article>
     `;
     return renderLayout({ site, title: 'Resume', description: resume.about, url: '/resume/', activeNav: 'Resume', content, ...options });
   }
+
 
   // 6. Single Post (/{slug}/)
   const postMatch = posts.find(p => p.url === cleanUrl || p.slug === cleanUrl.replace(/^\/|\/$/g, ''));
